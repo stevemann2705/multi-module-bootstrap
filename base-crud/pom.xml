@@ -22,7 +22,6 @@
         <dependency>
             <groupId>in.stevemann</groupId>
             <artifactId>base-models</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>in.stevemann</groupId>

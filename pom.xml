@@ -21,6 +21,7 @@
 		<module>base-crud</module>
 		<module>base-models</module>
 		<module>spring-commons</module>
+		<module>test-application</module>
 	</modules>
 
 </project>

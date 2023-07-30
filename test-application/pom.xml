@@ -9,19 +9,27 @@
         <relativePath>../app-parent/pom.xml</relativePath>
     </parent>
     <groupId>in.stevemann</groupId>
-    <artifactId>base-models</artifactId>
+    <artifactId>test-application</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>base-models</name>
-    <description>base-models</description>
+    <name>test-application</name>
+    <description>test-application</description>
     <properties>
         <java.version>17</java.version>
-        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
-
     </properties>
     <dependencies>
         <dependency>
             <groupId>in.stevemann</groupId>
-            <artifactId>spring-commons</artifactId>
+            <artifactId>base-crud</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
