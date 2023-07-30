@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>in.stevemann</groupId>
+    <artifactId>app-bom</artifactId>
+    <packaging>pom</packaging>
+    <version>${revision}</version>
+
+    <name>${project.groupId}-${project.artifactId}</name>
+    <description>app-bom</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>17</java.version>
+        <environment>dev</environment>
+        <revision>0.0.1-SNAPSHOT</revision>
+
+        <app-commons.groupId>in.stevemann</app-commons.groupId>
+
+        <sentry-logback.version>3.2.0</sentry-logback.version>
+        <springfox-swagger2.version>3.0.0</springfox-swagger2.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>in.stevemann</groupId>
+                <artifactId>base-models</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>in.stevemann</groupId>
+                <artifactId>base-crud</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>in.stevemann</groupId>
+                <artifactId>spring-commons</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
